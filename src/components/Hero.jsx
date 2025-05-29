@@ -38,7 +38,7 @@ const Hero = () => {
               >
                 {/* Profile Photo */}
                 <img 
-                  src="../assets/images/photo (1).jpeg"
+                  src={profilePhoto}
                   alt="Naveen N" 
                   className="w-full h-full object-cover object-center"
                   style={{ borderRadius: "50%" }}
