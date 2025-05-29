@@ -35,84 +35,12 @@ const Hero = () => {
                     : "0 5px 15px rgba(0, 0, 0, 0.1)" 
                 }}
               >
-                {/* Central Icon */}
-                <motion.div
-                  className="absolute"
-                  animate={{ 
-                    scale: iconHovered ? 1.2 : 1,
-                    opacity: 1
-                  }}
-                  transition={{ duration: 0.4 }}
-                >
-                  <FaCode className="text-7xl text-primary" />
-                </motion.div>
-
-                {/* Orbiting Icons */}
-                <motion.div 
-                  className="absolute w-full h-full"
-                  animate={{ rotate: 360 }}
-                  transition={{
-                    duration: 20,
-                    repeat: Infinity,
-                    ease: "linear"
-                  }}
-                >
-                  {/* Front-end Icon */}
-                  <motion.div
-                    className="absolute"
-                    initial={{ x: 0, y: -80 }}
-                    animate={{ 
-                      x: 0, 
-                      y: iconHovered ? -100 : -80,
-                      scale: iconHovered ? 1.1 : 1
-                    }}
-                    transition={{ duration: 0.4 }}
-                  >
-                    <FaDesktop className="text-4xl text-blue-500 drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]" />
-                  </motion.div>
-
-                  {/* Back-end Icon */}
-                  <motion.div
-                    className="absolute"
-                    initial={{ x: 80, y: 0 }}
-                    animate={{ 
-                      x: iconHovered ? 100 : 80, 
-                      y: 0,
-                      scale: iconHovered ? 1.1 : 1 
-                    }}
-                    transition={{ duration: 0.4 }}
-                  >
-                    <FaServer className="text-4xl text-green-500 drop-shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-                  </motion.div>
-
-                  {/* Database Icon */}
-                  <motion.div
-                    className="absolute"
-                    initial={{ x: 0, y: 80 }}
-                    animate={{ 
-                      x: 0, 
-                      y: iconHovered ? 100 : 80,
-                      scale: iconHovered ? 1.1 : 1 
-                    }}
-                    transition={{ duration: 0.4 }}
-                  >
-                    <FaDatabase className="text-4xl text-yellow-500 drop-shadow-[0_0_5px_rgba(234,179,8,0.5)]" />
-                  </motion.div>
-
-                  {/* API/Connection Icon */}
-                  <motion.div
-                    className="absolute"
-                    initial={{ x: -80, y: 0 }}
-                    animate={{ 
-                      x: iconHovered ? -100 : -80, 
-                      y: 0,
-                      scale: iconHovered ? 1.1 : 1 
-                    }}
-                    transition={{ duration: 0.4 }}
-                  >
-                    <FaGithub className="text-4xl text-purple-500 drop-shadow-[0_0_5px_rgba(168,85,247,0.5)]" />
-                  </motion.div>
-                </motion.div>
+                {/* Profile Photo */}
+                <img 
+                  src="../assets/images/photo (1).jpeg" 
+                  alt="Naveen N" 
+                  className="w-full h-full object-cover"
+                />
               </motion.div>
             </motion.div>
           </motion.div>

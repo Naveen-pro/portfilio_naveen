@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaCode, FaDatabase, FaTools, FaLaptopCode } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaTools, FaLaptopCode, FaBriefcase } from 'react-icons/fa';
 
 const Skills = () => {
   const skillCategories = [
@@ -19,7 +19,7 @@ const Skills = () => {
       skills: [
         { name: 'Django', level: 'Proficient', percentage: 60 },
         { name: 'React.js', level: 'Proficient', percentage: 70 },
-        { name: 'TailwindCSS', level: 'Familiar', percentage: 70 },
+      
       ],
     },
     {
@@ -27,18 +27,22 @@ const Skills = () => {
       icon: <FaTools />,
       skills: [
         { name: 'Git/GitHub', level: 'Proficient', percentage: 85 },
-        { name: 'RESTful APIs', level: 'Proficient', percentage: 50 },
-
+        { name: 'RESTful APIs', level: 'Beginner', percentage: 30 },
+        
       ],
     },
     {
       title: 'AI & Data',
       icon: <FaDatabase />,
       skills: [
-        { name: 'Data Analysis', level: 'Proficient', percentage: 50 },
-        { name: 'Pandas/NumPy', level: 'Proficient', percentage: 25 },
+        { name: 'Data Analysis', level: 'Intermediate', percentage: 50 },
+        { name: 'Pandas/NumPy', level: 'Beginner', percentage: 25 },
+        { name: 'ChatGPT/LLMs', level: 'Proficient', percentage: 75 },
+       
       ],
     },
+   
+          
   ];
 
   const cardVariants = {
