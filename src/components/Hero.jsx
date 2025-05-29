@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaCode, FaDatabase, FaServer, FaDesktop } from 'react-icons/fa';
 import { useState } from 'react';
+import profilePhoto from '../assets/images/photo (1).jpeg';
 
 const Hero = () => {
   const [iconHovered, setIconHovered] = useState(false);
@@ -37,9 +38,10 @@ const Hero = () => {
               >
                 {/* Profile Photo */}
                 <img 
-                  src="../assets/images/photo (1).jpeg" 
+                  src="../assets/images/photo (1).jpeg"
                   alt="Naveen N" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
+                  style={{ borderRadius: "50%" }}
                 />
               </motion.div>
             </motion.div>
